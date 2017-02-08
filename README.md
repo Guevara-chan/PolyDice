@@ -1,2 +1,1 @@
-# PolyDice
-/Polyhedron dice simulator/
+/under construction/
