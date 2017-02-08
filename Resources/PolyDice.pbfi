@@ -1,0 +1,31 @@
+PureFORM_CodeInject
+0:0:1:730
+AlignLeft(#Spin_Rolls) : AlignLeft(#Spin_Dices) : AlignLeft(#Spin_Bonus)
+If OpenPreferences("PolyDice.ini")
+DiceType = ReadPreferenceInteger("DType", 0)
+If DiceType >= 0 And DiceType <= #Option_27 - #Option_None
+Else : DiceType = 0
+EndIf : SetGadgetState(#Option_None + DiceType, #True)  
+SetGadgetState(#Spin_Rolls, ReadPreferenceInteger("Rolls", 1))
+SetGadgetState(#Spin_Bonus, ReadPreferenceInteger("Bonus", 1))
+SetGadgetState(#Spin_Dices, ReadPreferenceInteger("Dices", 0))
+SetGadgetText(#String_Minimum, Str(ReadPreferenceInteger("MinVal", 0)))
+SetGadgetText(#String_Maximum, Str(ReadPreferenceInteger("MaxVal", 99)))
+SetGadgetState(#CheckBox_Save, #True)
+Else : ResetGUI()
+EndIf
+HideWindow(#MainWindow, #False)
+6:0:0:408
+Global DiceType
+Procedure ResetGUI()
+SetGadgetText(#Spin_Rolls, "1")
+SetGadgetText(#Spin_Dices, "1")
+SetGadgetText(#Spin_Bonus, "0")
+DisableGadget(#Spin_Dices, #True)
+SetGadgetState(#Option_None, #True)
+EndProcedure
+
+Macro AlignLeft(Control) ; Partializer
+Define I = GetWindowLong_(GadgetID(Control), #GWL_STYLE)
+SetWindowLong_(GadgetID(Control), #GWL_STYLE, (I & ~#ES_RIGHT) | #ES_LEFT)
+EndMacro
