@@ -1,5 +1,5 @@
 # /Sum/:
-__PolyDice__ is quick/dirty GUI dice roller for tabletop or forum-based games.  
+__PolyDice__ is quick/dirty desktop dice roller for tabletop or forum-based games.  
 It's development was directly focused on unobtrusiveness and UI efficiency.
 
 # /Brief samples of interfacing/:
