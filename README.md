@@ -1,5 +1,5 @@
 # /Sum/:
-__Poly(hedron) Dice__ is quick/dirty desktop dice roller for tabletop or forum-based games.  
+__Poly(hedron) Dice__ is quick/dirty dice roller for tabletop or forum-based games.  
 It's design was directly focused on unobtrusiveness and UI efficiency.
 
 # /Brief samples of interfacing/:
