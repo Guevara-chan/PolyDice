@@ -3,7 +3,7 @@ __Poly(hedron) Dice__ is quick/dirty dice roller for tabletop or forum-based gam
 It's design was directly focused on library independence and UI efficiency.
 
 # /Featurae/:
-* ~~X~~Copy-based installation with everything packed in single executible.
+* ~~X~~Copy-based installation with everything being packed in single executible.
 * Minimalistic Win98-inspired GUI with optional .ini-based field saving.
 * d2, d3, d4, d5, d6, d8, d10, d12, d20, d30, d100 support.
 
