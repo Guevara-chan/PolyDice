@@ -8,7 +8,7 @@ It's design was directly focused on library independence and UI efficiency.
 * d2, d3, d4, d5, d6, d8, d10, d12, d20, d30, d100 support.
 
 # /Reassembling/:
-__PolyDice__ was written in plain [PureBasic v4.40](http://purebasic.com), though compatible with _5.40 (LTS)_.  
+__PolyDice__ was written in plain [PureBasic v4.40](http://purebasic.com), though compatible with _5.7x (LTS)_.  
 To rebuild - compile 'PolyDice.pb' as root sourcefile.
 
 # /Brief samples of interfacing/:
